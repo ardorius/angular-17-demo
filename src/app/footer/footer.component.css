@@ -1,0 +1,12 @@
+.footer-custom {
+  background-color: white; /* Vivid Pink farba */
+  color: #ff4081; /* Biela pre lepšiu čitateľnosť */
+}
+
+.footer-custom a {
+  color: white;
+}
+
+.footer-custom a:hover {
+  color: #ffd1e8; /* Svetlejší odtieň ružovej pri prejdení myšou */
+}

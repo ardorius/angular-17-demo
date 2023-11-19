@@ -1,0 +1,56 @@
+<div class="home">
+  <div class="container my-4">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h1 class="text-center mb-4">Welcome to Angular Essentials</h1>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <ng-container *ngIf="showAngularDescription; else otherContent">
+              <p>
+                Angular is a platform and framework for building single-page client applications using HTML and TypeScript.
+                It implements core and optional functionality as a set of TypeScript libraries that you import into your applications.
+              </p>
+            </ng-container>
+            <ng-template #otherContent>
+              <p>
+                Explore other modern web frameworks and libraries to find the best fit for your project needs. Each framework has its unique strengths and community support.
+              </p>
+            </ng-template>
+          </div>
+        </div>
+
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h2>Key Features</h2>
+            <ul class="list-unstyled">
+              <li *ngFor="let feature of keyFeatures">{{ feature }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h2>Why Angular?</h2>
+            <div [ngSwitch]="currentView">
+              <p *ngSwitchCase="'overview'">
+                Angular is a versatile framework for building SPAs using HTML, CSS, and TypeScript. It's known for its dependency injection, powerful templating, and full integration of modern web development tools.
+              </p>
+              <p *ngSwitchCase="'benefits'">
+                With Angular, developers can achieve high performance and easy scalability. Its modular design allows for reusing code and efficiently managing project resources.
+              </p>
+              <p *ngSwitchCase="'community'">
+                The Angular community is vibrant and supportive, offering extensive resources, libraries, and forums for both beginners and experienced developers.
+              </p>
+              <p *ngSwitchDefault>
+                Discover more about Angular and how it can revolutionize your web development process. It's a tool built for the future of the web.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

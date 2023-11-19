@@ -1,0 +1,66 @@
+/* Základné nastavenie pre navbar */
+.navbar-custom {
+  background-color: white; /* Pozadie navbaru */
+}
+
+/* Štýlovanie pre značku navbaru a odkazy */
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #ff4081; /* Farba odkazu */
+  transition: color 0.2s; /* Hladký prechod farby */
+}
+
+/* Efekt na prechod myšou pre odkazy */
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus {
+  color: #ffd1e8; /* Svetlejší odtieň ružovej pri prejdení myšou */
+  background-color: #ff4081; /* Podfarbenie odkazov pri prejdení myšou */
+  border-radius: 0.25rem; /* Zaoblené rohy */
+  padding: 0.5rem 1rem; /* Vnútorný priestor pre efekt tlačidla */
+}
+
+/* Aktívna položka menu */
+.navbar-custom .nav-item.active .nav-link {
+  background-color: #ff4081; /* Podfarbenie aktívnej položky menu */
+  color: white; /* Biela farba textu pre aktívny odkaz */
+  border-radius: 0.25rem; /* Zaoblené rohy */
+}
+
+/* Responzívne zarovnanie tlačidiel pri zbalení navbaru */
+@media (max-width: 991px) {
+  .navbar-custom .navbar-nav .nav-link {
+    border-radius: 0.25rem; /* Zaoblené rohy */
+    margin: 0.1rem 0; /* Medzery medzi položkami */
+  }
+}
+
+/* Nastavenie pre navbar-toggler (ikona pre rozbalenie pri malých zariadeniach) */
+.navbar-custom .navbar-toggler {
+  border-color: #ff4081; /* Farba okraja pre tlačidlo navbar-toggler */
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ff4081' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  /* Ikona pre tlačidlo navbar-toggler s farbou #ff4081 */
+}
+
+/* Nastavenie pre celkový vnútorný priestor navbaru */
+.navbar-custom .container,
+.navbar-custom .container-fluid,
+.navbar-custom .container-sm,
+.navbar-custom .container-md,
+.navbar-custom .container-lg,
+.navbar-custom .container-xl {
+  padding-left: 0; /* Odstránenie vnútorného okraja z ľavej strany */
+}
+
+/* Nastavenie pre položky menu v navigácii */
+.navbar-nav {
+  padding-left: 15px; /* Prispôsobenie odsadenia položiek menu, aby sa zhodovali s obsahom Home komponentu */
+}
+
+@media (min-width: 992px) { /* Bootstrap breakpoint pre veľké zariadenia */
+  .navbar-expand-lg .navbar-nav {
+    padding-left: 0; /* Môžete upraviť hodnotu podľa potreby pre vaše rozloženie */
+  }
+}
