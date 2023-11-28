@@ -16,10 +16,10 @@ export class PortfolioComponent {
   angularVersion: any[] = [];
 
   ngOnInit(): void {
-    this.getTopMovies();
+    this.getVersions();
   }
 
-  getTopMovies(){
+  getVersions(){
     this.httpClient.get<any[]>('assets/data/angularData.json')
     .subscribe((data:any[]) => {
       this.angularVersion = data;
