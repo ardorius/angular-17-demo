@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { NgSwitch, NgFor, NgIf, NgSwitchCase, NgSwitchDefault } from '@angular/common';
+import { PortfolioComponent } from '../portfolio/portfolio.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   standalone: true,
-  imports: [NgSwitch, NgFor, NgIf, NgSwitchCase, NgSwitchDefault]
+  imports: [NgSwitch, NgFor, NgIf, NgSwitchCase, NgSwitchDefault, PortfolioComponent]
 })
 export class HomeComponent {
   showAngularDescription: boolean = false; // Túto premennú môžete meniť podľa potreby

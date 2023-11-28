@@ -1,0 +1,20 @@
+[
+  {
+    "imageUrl": "../../../assets/images/angularjs.JPG",
+    "title": "AngularJS",
+    "yearStart": "2010",
+    "yearEnd": "2022"
+  },
+  {
+    "imageUrl": "../../../assets/images/angular.svg",
+    "title": "Angular",
+    "yearStart": "2016",
+    "yearEnd": "-"
+  },
+  {
+    "imageUrl": "../../../assets/images/angular2.gif",
+    "title": "Angular 2.0",
+    "yearStart": "2023",
+    "yearEnd": "-"
+  }
+]
